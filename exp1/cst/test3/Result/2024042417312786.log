@@ -1,0 +1,30 @@
+
+              Logfile of Field Evaluation
+              ===========================
+
+Calculation window:
+===================
+
+ Coordinate System       : global (xyz)   cartesian
+ Dimension               : 1D
+ Direction (tangential)  : X
+ Stepsize                : 7.43394
+
+                 low        high    stepsize
+         ----------- ----------- -----------
+       X         -99          99  7.3333E+00
+       Y         -99         -99           1
+       Z         -99         -99           1
+
+Evaluated field, component and result value:
+============================================
+
+ Evaluated field         : D-Field [Es]
+ Field component         : Abs
+ Complex                 : Real Part
+ Result Value            : 1D Plot of Field Values
+
+
+Result Data:
+============
+

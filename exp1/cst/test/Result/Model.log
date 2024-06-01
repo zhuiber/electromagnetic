@@ -1,0 +1,87 @@
+17/Apr/2024 17:14:48  Electrostatic Solver
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:48  Units settings: 
+                      
+                        Dimensions: mm
+                        Frequency:  Hz
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:48  Boundary conditions: 
+                      
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+                      
+                        Xmin: expanded lf open
+                        Xmax: expanded lf open
+                      
+                        Ymin: expanded lf open
+                        Ymax: expanded lf open
+                      
+                        Zmin: expanded lf open
+                        Zmax: expanded lf open
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:50  Solver started at: 05:14 PM Wednesday, 17. April 2024 (中国标准时间)
+                      
+                        Module:  Electrostatic Solver (Win 64)
+                        Version: 2021.1 Release from 2020-11-10 (change 826605)
+                      
+                        Hardware:
+                           Computer name: ADMIN
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:50  Solver order = 2
+                      
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:50  Detected 1 independent conductive set.
+17/Apr/2024 17:14:50  Desired accuracy = 1.0e-0617/Apr/2024 17:14:50  
+                      
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:50  Using mesh with curved elements order: 3
+                      
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:51  Solver Timing Statistics: (last run)
+                      
+                        Mesh generation:                  0d :  0h :  0m :  1s
+                        Assembling process:               0d :  0h :  0m :  0s
+                        Linear solver:                    0d :  0h :  0m :  0s
+                                                       --------------------------
+                        Total time:                       0d :  0h :  0m :  1s
+                      
+                        Number of threads used:           1024 
+                      
+                      
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:51  Solver Size Statistics:
+                      
+                        Number of mesh cells:         9326 
+                        Number of unknowns:           12969
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:51  Linear Solver Results: (last run)
+                      
+                        Accuracy:                     1.050173e-13
+                        Desired accuracy:             1.000000e-06
+                        Number of iterations:         1
+                        Maximum number of iterations: 10000
+                      
+                      
+                      ------------------------------------------------------------------------------
+17/Apr/2024 17:14:51  Memory statistics:
+                      
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        12492                         5257852      5257736      
+                        Solver run total    80788                         5256868      5256868      
+                        ----------------------------------------------------------------------------
+                      
+                      
+                      ------------------------------------------------------------------------------

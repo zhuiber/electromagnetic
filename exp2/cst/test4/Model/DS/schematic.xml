@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchematicTopology Version="2.5" Seed="1" Grid="25">
+    <Block Id="1" ForeignId="304243884" Class="EMSSCHEM" ImageIndex="1">
+        <Size Height="375" Width="300"/>
+        <Pins Distribution="Custom">
+            <Pin Index="0" Port="0" BlockPosition="Left">
+                <Label>cport:Folder1:currentport1</Label>
+            </Pin>
+            <Pin Index="3" Port="1" BlockPosition="Right">
+                <Label>cport:Folder1:currentport2</Label>
+            </Pin>
+            <Pin Index="1" Port="2" BlockPosition="Left">
+                <Label>cport:Folder1:currentport3</Label>
+            </Pin>
+            <Pin Index="2" Port="3" BlockPosition="Right">
+                <Label>cport:Folder1:currentport4</Label>
+            </Pin>
+            <Pin Index="2" Port="4" BlockPosition="Left">
+                <Label>cport:Folder1:currentport1'</Label>
+            </Pin>
+            <Pin Index="1" Port="5" BlockPosition="Right">
+                <Label>cport:Folder1:currentport2'</Label>
+            </Pin>
+            <Pin Index="3" Port="6" BlockPosition="Left">
+                <Label>cport:Folder1:currentport3'</Label>
+            </Pin>
+            <Pin Index="0" Port="7" BlockPosition="Right">
+                <Label>cport:Folder1:currentport4'</Label>
+            </Pin>
+            <Ports>
+                <Port Name="cport:Folder1:currentport1" Label="" Differential="4"/>
+                <Port Name="cport:Folder1:currentport2" Label="" Differential="5"/>
+                <Port Name="cport:Folder1:currentport3" Label="" Differential="6"/>
+                <Port Name="cport:Folder1:currentport4" Label="" Differential="7"/>
+                <Port Name="cport:Folder1:currentport1'" Label=""/>
+                <Port Name="cport:Folder1:currentport2'" Label=""/>
+                <Port Name="cport:Folder1:currentport3'" Label=""/>
+                <Port Name="cport:Folder1:currentport4'" Label=""/>
+            </Ports>
+        </Pins>
+        <Image FileName="../../3D/Model.dib" Scale="AutoFit"/>
+        <Pos X="100" Y="-12.5"/>
+        <ToolTip>CST EM STUDIO schematic block EMSSCHEM1</ToolTip>
+    </Block>
+</SchematicTopology>

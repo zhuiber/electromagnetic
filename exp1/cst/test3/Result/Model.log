@@ -1,0 +1,105 @@
+24/Apr/2024 17:03:20  Electrostatic Solver
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:20  Units settings: 
+                      
+                        Dimensions: mm
+                        Frequency:  Hz
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:20  Boundary conditions: 
+                      
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+                      
+                        Xmin: electric
+                        Xmax: electric
+                      
+                        Ymin: electric
+                        Ymax: electric
+                      
+                        Zmin: electric
+                        Zmax: electric
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:23  Solver started at: 05:03 PM Wednesday, 24. April 2024 (中国标准时间)
+                      
+                        Module:  Electrostatic Solver (Win 64)
+                        Version: 2021.1 Release from 2020-11-10 (change 826605)
+                      
+                        Hardware:
+                           Computer name: ADMIN
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:23  Solver order = 2
+                      
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:23  Detected 2 independent conductive sets.
+24/Apr/2024 17:03:23  Desired accuracy = 1.0e-0624/Apr/2024 17:03:23  
+                      
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:23  Using mesh with curved elements order: 3
+                      
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:23  Adaptive Computation
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:23  Pass 1: 
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:24  Pass 2: 
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:24  Marked 834 of 9112 for refinement.24/Apr/2024 17:03:25  Refinement successful
+24/Apr/2024 17:03:27  Solver Timing Statistics: (last run)
+                      
+                        Mesh generation:                  0d :  0h :  0m :  2s
+                        Initialization and data import:   0d :  0h :  0m :  0s
+                        Assembling process:               0d :  0h :  0m :  0s
+                        Linear solver:                    0d :  0h :  0m :  0s
+                                                       --------------------------
+                        Total time:                       0d :  0h :  0m :  3s
+                      
+                        Number of threads used:           1024 
+                      
+                      
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:27  Total simulation time (all mesh adaptation runs) 0d :  0h :  0m :  3s
+                      
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:27  Solver Size Statistics:
+                      
+                        Number of mesh cells:         14005 
+                        Number of unknowns:           18344
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:27  Linear Solver Results: (last run)
+                      
+                        Accuracy:                     4.375944e-15
+                        Desired accuracy:             1.000000e-06
+                        Number of iterations:         1
+                        Maximum number of iterations: 10000
+                      
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:27  Memory statistics:
+                      
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        12728                         827368       827368       
+                        Solver run total    101476                        826500       803788       
+                        ----------------------------------------------------------------------------
+                      
+                      
+                      ------------------------------------------------------------------------------
+24/Apr/2024 17:03:29  Creating parametric 1D results for Run ID 1
+                      
+                      ------------------------------------------------------------------------------

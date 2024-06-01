@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SourceDefinition creator="Modeler">
+  <General>
+    <NumberOfItems>1</NumberOfItems>
+  </General>
+  <Item_0>
+    <FaceLink_0>
+      <ID>3</ID>
+      <SolidName>component1:solid1</SolidName>
+      <SrcAttachment>Lump</SrcAttachment>
+    </FaceLink_0>
+    <Name>charge1</Name>
+    <NumFaceLinks>1</NumFaceLinks>
+    <TypeID>720896</TypeID>
+    <Valid>1</Valid>
+  </Item_0>
+</SourceDefinition>

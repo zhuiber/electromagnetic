@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchematicTopology Version="2.5" Seed="1" Grid="25">
+    <Block Id="1" ForeignId="15779232" Class="EMSSCHEM" ImageIndex="1">
+        <Size Height="150" Width="150"/>
+        <Image FileName="../../3D/Model.dib" Scale="AutoFit"/>
+        <Pos X="100" Y="0"/>
+        <ToolTip>CST EM STUDIO schematic block EMSSCHEM1</ToolTip>
+    </Block>
+</SchematicTopology>

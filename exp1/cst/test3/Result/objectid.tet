@@ -1,0 +1,42 @@
+// Number of object-id's
+3
+
+// List object-id's with types (0=solid, 1=background, 2=sheet, 3=wire, 4=portwire, 5=portelement, 6=coil, 7=lumpedelement, 8=lumpedwire, 9=current path, 10=voltage path):
+component1:solid2
+0
+air_0:brick
+1
+component1:solid1
+0
+
+// Number of 0D groups with object-id
+0
+
+// 0D Groupd-id, object-id
+
+// Number of 1D groups with object-id
+0
+
+// 1D Groupd-id, object-id
+
+// Number of 2D groups with object-id
+8
+
+// 2D Groupd-id, object-id from, object-id to
+1 2 -1 -1 -1 -1 -1
+2 2 -1 -1 -1 -1 -1
+3 2 -1 -1 -1 -1 -1
+4 2 -1 -1 -1 -1 -1
+5 2 -1 -1 -1 -1 -1
+6 2 -1 -1 -1 -1 -1
+7 3 1 -1 -1 -1 -1
+8 2 1 -1 -1 -1 -1
+
+// Number of 3D groups with object-id
+3
+
+// 3D Groupd-id, object-id
+1 1
+2 2
+3 3
+

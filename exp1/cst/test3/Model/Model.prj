@@ -1,0 +1,19 @@
+[Version]
+2
+[ProjectVersion]
+'# EMS Version: Version 2021.1 - Nov 10 2020 - ACIS 30.0.1 -
+[Author]
+zhuibar
+[Mesh Cells]
+14,005
+[Mesh Type]
+Tetrahedral
+[Last Problem Type]
+E-Static Solver
+[Last Solver Type]
+LF EStatic
+[Last Solver Type Abb]
+es
+[Results]
+Electrostatic Solver
+[Comment]

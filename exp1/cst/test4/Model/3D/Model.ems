@@ -1,0 +1,65 @@
+'# EMS Version: Version 2021.1 - Nov 10 2020 - ACIS 30.0.1 -
+
+'# length = mm
+'# frequency = Hz
+'# time = s
+'# frequency range: fmin = 0.0 fmax = 0.0
+'# created = '[VERSION]2021.1|30.0.1|20201110[/VERSION]
+
+
+'@ define units
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Units 
+     .Geometry "mm" 
+     .Frequency "Hz" 
+     .Time "s" 
+     .TemperatureUnit "Kelvin" 
+     .Voltage "V" 
+     .Current "A" 
+     .Resistance "Ohm" 
+     .Conductance "Siemens" 
+     .Capacitance "PikoF" 
+     .Inductance "NanoH" 
+     .SetResultUnit "frequency", "frequency", "" 
+End With
+
+'@ new component: component1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Component.New "component1"
+
+'@ define sphere: component1:solid1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Axis "z" 
+     .CenterRadius "10" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "-0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define sphere: component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Axis "z" 
+     .CenterRadius "20" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+

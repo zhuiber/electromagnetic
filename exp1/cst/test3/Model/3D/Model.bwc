@@ -1,0 +1,12 @@
+3000 0 1 0           
+13 CST EM STUDIO 14 ACIS 30.0.1 NT 24 Wed Apr 24 19:10:25 2024 
+1 9.9999999999999995e-07 1e-10 
+T @77 X_SQVAS2JT4BDN5TYJJDUKRVT5TV99QAWC3VP657KCPKJA69Q8PCRP67KAQVM67DKCQ3RZQB7CRCJ 
+face $1 -1 -1 $-1 $-1 $-1 $-1 $-1 $2 forward single F F #
+name_attrib-gen-attrib $-1 -1 $3 $-1 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @18 ncomponent1:solid1 #
+sphere-surface $-1 -1 -1 $-1 0 0 0 10 1 0 0 0 0 1 forward_v I I I I #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $4 $1 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @17 backwd_pickNumber 1 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $5 $3 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @18 backwd_blockNumber 11 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $6 $4 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @9 backwd_id 1 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $5 $0 2 0 0 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @3 fif 0 #
+End-of-ACIS-data 

@@ -1,0 +1,18 @@
+[11:37:35] -------- TetMesher Log --------
+[11:37:35] Build Number: 20201110; ID: 2021.1 Release from 2020-11-10 (change 826605); Date: 2020-11-10; ACIS version: 30.0.1, SPAresabs & SPAresnor: 1e-06, 1e-10; Problem class: Low Frequency
+[11:37:35] Adaptive mesh refinement (pos.snap.)
+[11:37:35] - Refining mesh
+[11:37:35]  Mesh bisection
+
+[11:37:35]  
+
+[11:37:35]  Bisection done
+
+[11:37:35]  Curve elements, order = 3
+
+[11:37:36] - OK
+[11:37:36] 
+#### Feedback Report Begins ####
+#### Feedback Report Ends ####
+
+[11:37:36] Done

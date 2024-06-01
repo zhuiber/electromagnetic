@@ -1,0 +1,41 @@
+
+              Logfile of Field Evaluation
+              ===========================
+
+Calculation window:
+===================
+
+ Coordinate System       : global (xyz)   cartesian
+ Dimension               : 1D
+ Direction (tangential)  : Z
+ Stepsize                : 0.277589381818182
+
+                 low        high    stepsize
+         ----------- ----------- -----------
+       X -2.4142E+01 -2.4142E+01           1
+       Y -2.4142E+01 -2.4142E+01           1
+       Z           0          30  2.7778E-01
+
+Evaluated field, component and result value:
+============================================
+
+ Evaluated field         : E-Field [Es]
+ Field component         : Abs
+ Complex                 : Real Part
+ Result Value            : 1D Plot of Field Values
+
+
+Result Data:
+============
+
+ NData Points = 109
+
+ Max. value   =   3.1283E+13 at ( -2.4142E+01/ -2.4142E+01/           0)
+ Min. value   =   1.5645E+13 at ( -2.4142E+01/ -2.4142E+01/          30)
+ Mean value   =   2.4319E+13
+ Deviation    =   6.6647E-01
+
+ Integral     =   7.3632E+11
+ Volume (Unit)=   3.0278E+01 mm^1
+ Volume (SI)  =   3.0278E-02 m^1
+

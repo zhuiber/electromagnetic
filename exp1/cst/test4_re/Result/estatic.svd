@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SolutionVectorDescription creator="Es-Solver">
+  <Field>
+    <Boundary>electric; electric; electric; electric; electric; electric</Boundary>
+    <Frequency>0</Frequency>
+    <Symmetry>none; none; none</Symmetry>
+    <Type>E-Field</Type>
+  </Field>
+  <Mesh>
+    <BBox>-20.1; 20.1; -20.1; 20.1; -20.1; 20.1</BBox>
+    <File>3d.slim</File>
+    <GeomScale>0.001</GeomScale>
+    <Type>Tet</Type>
+  </Mesh>
+</SolutionVectorDescription>

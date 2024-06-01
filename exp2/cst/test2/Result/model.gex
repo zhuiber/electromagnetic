@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaGeometryFile version="20200202" creator="TetMesher">
+  <Components>
+    <Shape name="Components\air_0:brick" id="0" visible="1" material="air_0" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="23 24 25 26 27 28"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="29"/>
+    </Shape>
+    <Shape name="Components\air_0:brick\PEC_Background" id="1" visible="1" material="air_0" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list=""/>
+        <Neg list="23 24 25 26 27 28"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list=""/>
+    </Shape>
+  </Components>
+  <Materials>
+    <Material name="Air" priority="1">
+      <Drawstyle color="0.68235302 0.717647016 1" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="Copper (annealed)" priority="1">
+      <Drawstyle color="0.899999976 0.899999976 0" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="PEC" priority="1">
+      <Drawstyle color="0.800000012 0.800000012 0.800000012" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="air_0" priority="1">
+      <Drawstyle color="0.600000024 0.600000024 0.600000024" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="$NFSMaterial$" priority="1">
+      <Drawstyle color="0 1 1" transparency="0" linestrength="1"/>
+    </Material>
+  </Materials>
+  <Groups/>
+  <SimulationDomain min="-32.9000015 -32.9000015 -10" max="32.9000015 32.9000015 10"/>
+  <MeshType type="TETRAHEDRAL"/>
+  <HexMesh>
+    <Dimensions nx="11" ny="11" nz="6"/>
+    <MeshPlanesX values="-32.900001525878906 -26.320001220703123 -19.740000915527347 -13.160000610351574 -6.5800003051757958 -1.7819079545233762e-14 6.5800003051757567 13.160000610351531 19.740000915527308 26.32000122070308 32.900001525878906"/>
+    <MeshPlanesY values="-32.900001525878906 -26.320001220703123 -19.740000915527347 -13.160000610351574 -6.5800003051757958 -1.7819079545233762e-14 6.5800003051757567 13.160000610351531 19.740000915527308 26.32000122070308 32.900001525878906"/>
+    <MeshPlanesZ values="-10 -5.9999999999999991 -1.9999999999999949 1.9999999999999996 5.9999999999999947 10"/>
+  </HexMesh>
+  <UnitCell/>
+  <GeometryFile filename="3d.slim" type="slim" scale_factor_to_meter="0.001" subdomain_id=""/>
+</MetaGeometryFile>

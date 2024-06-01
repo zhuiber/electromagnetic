@@ -1,0 +1,15 @@
+FeatureKeywords:string:DELETERESULTS:0SP0, meshloading:problem_class_only, mesh::background::boolean, DELETERESULTS:M000, mesh:workflow:LegacyInput_from_CST_Studio_2020, mesh:workflow:nru, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:lib:blsurf, background:normal, boundary:electric:xmax, boundary:electric:xmin, boundary:electric:ymax, boundary:electric:ymin, boundary:electric:zmax, boundary:electric:zmin, mesh:tet, mesh:tet:adaptive, solver:lf:m-static, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:Hz, units:Inductance:nH, units:Length:m, units:Resistance:Ohm, units:Temperature:Kelvin, units:Time:s, units:Voltage:V, la:direct, la:precond:pdss7, la:iterative, mf:nonlinear:linear, visualization:field_plot:default_engine, TABLE:UNIT_CHECK:WRITE, modeler:load:fastloading, units:Length:mm
+LastWorkflowState:string:tetmesh:success
+solver_pp/InitialFreePhysicalInMB:int:2069
+solver_pp/MaxResidentSizeInMB:int:21
+solver_pp/MaxResidentSizeMiB:int:4
+solver_pp/MinFreePhysicalInMB:int:2064
+solver_sh_tet/InitialFreePhysicalInMB:int:2082
+solver_sh_tet/MaxResidentSizeInMB:int:69
+solver_sh_tet/MaxResidentSizeMiB:int:54
+solver_sh_tet/MinFreePhysicalInMB:int:2062
+tetmesh/InitialFreePhysicalInMB:int:2060
+tetmesh/MaxResidentSizeInMB:int:33
+tetmesh/MaxResidentSizeMiB:int:48
+tetmesh/MinFreePhysicalInMB:int:2041
+---

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SolutionVectorDescription creator="Es-Solver">
+  <Field>
+    <Boundary>expanded lf open; expanded lf open; expanded lf open; expanded lf open; expanded lf open; expanded lf open</Boundary>
+    <Frequency>0</Frequency>
+    <Symmetry>none; none; none</Symmetry>
+    <Type>E-Field</Type>
+  </Field>
+  <Mesh>
+    <BBox>-40; 40; -40; 40; -40; 40</BBox>
+    <File>3d_full.slim</File>
+    <GeomScale>0.001</GeomScale>
+    <Type>Tet</Type>
+  </Mesh>
+</SolutionVectorDescription>

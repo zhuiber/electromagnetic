@@ -1,0 +1,412 @@
+'# EMS Version: Version 2021.1 - Nov 10 2020 - ACIS 30.0.1 -
+
+'# length = mm
+'# frequency = Hz
+'# time = s
+'# frequency range: fmin = 0.0 fmax = 0.0
+'# created = '[VERSION]2021.1|30.0.1|20201110[/VERSION]
+
+
+'@ new component: component1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Component.New "component1"
+
+'@ define sphere: component1:solid1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Axis "z" 
+     .CenterRadius "10" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define sphere: component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Axis "z" 
+     .CenterRadius "9.9" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "-0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ boolean subtract shapes: component1:solid1, component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.Subtract "component1:solid1", "component1:solid2"
+
+'@ define charge: charge1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Charge
+     .Reset
+     .Name "charge1"
+     .Value "1"
+     .Face "component1:solid1", "2"
+     .Type "PEC"
+     .Create
+End With
+
+'@ define material: material1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Material 
+     .Reset 
+     .Name "material1"
+     .Folder ""
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0"
+     .SpecificHeat "0", "J/K/kg"
+     .DynamicViscosity "0"
+     .Emissivity "0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .MechanicsType "Unused"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "Hz"
+     .MaterialUnit "Geometry", "m"
+     .MaterialUnit "Time", "s"
+     .MaterialUnit "Temperature", "Kelvin"
+     .Epsilon "4"
+     .Mu "1"
+     .Sigma "0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstTanD"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstTanD"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0", "1", "1" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .Create
+End With
+
+'@ define sphere: component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "material1" 
+     .Axis "z" 
+     .CenterRadius "20" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "-0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ activate local coordinates
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ define sphere: component1:solid3
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid3" 
+     .Component "component1" 
+     .Material "material1" 
+     .Axis "z" 
+     .CenterRadius "10" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ boolean subtract shapes: component1:solid2, component1:solid3
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.Subtract "component1:solid2", "component1:solid3"
+
+'@ align wcs with global plane
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With WCS
+     .SetNormal "1", "0", "0"
+     .SetUVector "0", "1", "0"
+     .ActivateWCS "local" 
+End With
+
+'@ slice shape: component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.SliceShape "solid2", "component1"
+
+'@ define material: material2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Material 
+     .Reset 
+     .Name "material2"
+     .Folder ""
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0"
+     .SpecificHeat "0", "J/K/kg"
+     .DynamicViscosity "0"
+     .Emissivity "0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .MechanicsType "Unused"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "Hz"
+     .MaterialUnit "Geometry", "m"
+     .MaterialUnit "Time", "s"
+     .MaterialUnit "Temperature", "Kelvin"
+     .Epsilon "4.9"
+     .Mu "1"
+     .Sigma "0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstTanD"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstTanD"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0", "1", "1" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .Create
+End With
+
+'@ change material: component1:solid2_1 to: material2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.ChangeMaterial "component1:solid2_1", "material2"
+
+'@ define sphere: component1:solid3
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid3" 
+     .Component "component1" 
+     .Material "material1" 
+     .Axis "z" 
+     .CenterRadius "20.1" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ delete shape: component1:solid3
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.Delete "component1:solid3"
+
+'@ define sphere: component1:solid3
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid3" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Axis "z" 
+     .CenterRadius "20" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define sphere: component1:solid4
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Sphere 
+     .Reset 
+     .Name "solid4" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Axis "z" 
+     .CenterRadius "20.1" 
+     .TopRadius "0" 
+     .BottomRadius "0" 
+     .Center "0", "0", "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ boolean subtract shapes: component1:solid4, component1:solid3
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.Subtract "component1:solid4", "component1:solid3"
+
+'@ define charge: charge2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Charge
+     .Reset
+     .Name "charge2"
+     .Value "-1"
+     .Face "component1:solid4", "2"
+     .Type "PEC"
+     .Create
+End With
+
+'@ set tetrahedral mesh type
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Mesh.MeshType "Tetrahedral"
+
+'@ define e-static solver parameters
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+'@ change solver type
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+ChangeSolverType "LF EStatic"
+
+'@ define units
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Units 
+     .Geometry "mm" 
+     .Frequency "Hz" 
+     .Time "s" 
+     .TemperatureUnit "Kelvin" 
+     .Voltage "V" 
+     .Current "A" 
+     .Resistance "Ohm" 
+     .Conductance "Siemens" 
+     .Capacitance "PikoF" 
+     .Inductance "NanoH" 
+     .SetResultUnit "frequency", "frequency", "" 
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+

@@ -1,0 +1,333 @@
+'# EMS Version: Version 2021.1 - Nov 10 2020 - ACIS 30.0.1 -
+
+'# length = m
+'# frequency = Hz
+'# time = s
+'# frequency range: fmin = 0.0 fmax = 0.0
+'# created = '[VERSION]2021.1|30.0.1|20201110[/VERSION]
+
+
+'@ new component: component1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Component.New "component1"
+
+'@ define cylinder: component1:solid1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .OuterRadius "1" 
+     .InnerRadius "0" 
+     .Axis "z" 
+     .Zrange "-10", "10" 
+     .Xcenter "-0.5" 
+     .Ycenter "-0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define cylinder: component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .OuterRadius "1" 
+     .InnerRadius "0" 
+     .Axis "z" 
+     .Zrange "-10", "10" 
+     .Xcenter "0.5" 
+     .Ycenter "-0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ delete shape: component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.Delete "component1:solid2"
+
+'@ define cylinder: component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .OuterRadius "1" 
+     .InnerRadius "0" 
+     .Axis "z" 
+     .Zrange "-10", "10" 
+     .Xcenter "0.5" 
+     .Ycenter "-0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ boolean intersect shapes: component1:solid1, component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.Intersect "component1:solid1", "component1:solid2"
+
+'@ paste structure data: 1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With SAT 
+     .Reset 
+     .FileName "*1.cby" 
+     .SubProjectScaleFactor "1" 
+     .ImportToActiveCoordinateSystem "True" 
+     .ScaleToUnit "True" 
+     .Curves "False" 
+     .Read 
+End With
+
+'@ define cylinder: component1:solid2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .OuterRadius "1" 
+     .InnerRadius "0" 
+     .Axis "z" 
+     .Zrange "-10", "10" 
+     .Xcenter "-0.5" 
+     .Ycenter "-0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define cylinder: component1:solid3
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid3" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .OuterRadius "1" 
+     .InnerRadius "0" 
+     .Axis "z" 
+     .Zrange "-10", "10" 
+     .Xcenter "0.5" 
+     .Ycenter "-0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ boolean subtract shapes: component1:solid2, component1:solid1_1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.Subtract "component1:solid2", "component1:solid1_1"
+
+'@ boolean subtract shapes: component1:solid3, component1:solid1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Solid.Subtract "component1:solid3", "component1:solid1"
+
+'@ change solver type
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+ChangeSolverType "LF MStatic"
+
+'@ define current port: Folder1:currentport1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With CurrentPort
+     .Reset
+     .Name "currentport1"
+     .Folder "Folder1"
+     .Value "1"
+     .Phase "0"
+     .ValueType "Current"
+     .CurrentDirection "FaceNormal"
+     .Face "component1:solid3", "11"
+     .Create
+End With
+
+'@ define current port: Folder1:currentport2
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With CurrentPort
+     .Reset
+     .Name "currentport2"
+     .Folder "Folder1"
+     .Value "1"
+     .Phase "0"
+     .ValueType "Current"
+     .CurrentDirection "FaceInverted"
+     .Face "component1:solid3", "10"
+     .Create
+End With
+
+'@ define current port: Folder1:currentport3
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With CurrentPort
+     .Reset
+     .Name "currentport3"
+     .Folder "Folder1"
+     .Value "1"
+     .Phase "0"
+     .ValueType "Current"
+     .CurrentDirection "FaceNormal"
+     .Face "component1:solid2", "11"
+     .Create
+End With
+
+'@ define current port: Folder1:currentport4
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With CurrentPort
+     .Reset
+     .Name "currentport4"
+     .Folder "Folder1"
+     .Value "1"
+     .Phase "0"
+     .ValueType "Current"
+     .CurrentDirection "FaceInverted"
+     .Face "component1:solid2", "10"
+     .Create
+End With
+
+'@ define background
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Background 
+     .ResetBackground 
+     .XminSpace "10" 
+     .XmaxSpace "10" 
+     .YminSpace "10" 
+     .YmaxSpace "10" 
+     .ZminSpace "0.0" 
+     .ZmaxSpace "0.0" 
+     .ApplyInAllDirections "False" 
+End With 
+
+With Material 
+     .Reset 
+     .Rho "1.204"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.026"
+     .SpecificHeat "1005", "J/K/kg"
+     .DynamicViscosity "1.84e-5"
+     .Emissivity "0.0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .MechanicsType "Unused"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "Hz"
+     .MaterialUnit "Geometry", "m"
+     .MaterialUnit "Time", "s"
+     .MaterialUnit "Temperature", "Kelvin"
+     .Epsilon "1.00059"
+     .Mu "1.0"
+     .Sigma "0.0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstSigma"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstSigma"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0.6", "0.6", "0.6" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeBackgroundMaterial
+End With
+
+'@ define boundaries
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Boundary
+     .Xmin "electric"
+     .Xmax "electric"
+     .Ymin "electric"
+     .Ymax "electric"
+     .Zmin "electric"
+     .Zmax "electric"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "True"
+     .XminPotential ""
+     .XminPotentialType "None"
+     .XmaxPotential ""
+     .XmaxPotentialType "None"
+     .YminPotential ""
+     .YminPotentialType "None"
+     .YmaxPotential ""
+     .YmaxPotentialType "None"
+     .ZminPotential ""
+     .ZminPotentialType "None"
+     .ZmaxPotential ""
+     .ZmaxPotentialType "None"
+End With
+
+'@ define m-static solver parameters
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With MStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .ApparentInductanceMatrix "False"
+     .IncrementalInductanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .PrecomputeStationaryCurrentSource "False"
+     .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
