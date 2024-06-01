@@ -1,13 +1,5 @@
 MWS Result File Version 20150206
-size=i:52
-
-type=s:HIDDENITEM
-problemclass=s::8:1000
-visibility=s:hidden
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-files=s:B-Field (Ms)_Abs (X).rd1
+size=i:47
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -32,6 +24,22 @@ creation=s:internal
 lifetime=s:rebuild
 result=s:1
 files=s:Magnetic Field Energy.stx
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:0
+files=s:Model.hmi
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:B-Field (Ms)_Abs (X).rd1
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -127,112 +135,10 @@ subtype=s:user
 problemclass=s::8:1000
 visibility=s:visible
 creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Meshcells
-files=s:Tet-Adaptation-Meshcells.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Solvertime
-files=s:Tet-Adaptation-Solvertime.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Passtime
-files=s:Tet-Adaptation-Passtime.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Error
-files=s:Tet-Adaptation-Error.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Degrees of Freedom
-files=s:Tet-Adaptation-DOF.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Energy
-files=s:Tet-Adaptation-Energy.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
 lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\Ms Solver\Convergence\Solver\Rel. Residual
 files=s:Residual.sig
-
-type=s:CURRENT3D_TET
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:2D/3D Results\Source Current Dens. [Ms]
-files=s:48dacb9a.rex
-
-type=s:HFIELD3D_TET
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:2D/3D Results\H-Field [Ms]
-files=s:e9c2c96e.rex
-
-type=s:BFIELD3D_TET
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:2D/3D Results\B-Field [Ms]
-files=s:70282f68.rex
-
-type=s:HENERGY3D_TET
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:2D/3D Results\Mag. Energy Dens. [Ms]
-files=s:9521a0f9.rex
 
 type=s:MATERIAL MUE_TET
 problemclass=s::8:1000
@@ -494,4 +400,40 @@ result=s:1
 parametric=s:P
 treepath=s:1D Results\Ms Solver\Flux Linkages\Folder1\currentport2
 files=s:MsSolver_FluxLinkages_Folder1_currentport2.0d
+
+type=s:CURRENT3D_TET
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\Source Current Dens. [Ms]
+files=s:48dacb9a.rex
+
+type=s:HFIELD3D_TET
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\H-Field [Ms]
+files=s:e9c2c96e.rex
+
+type=s:BFIELD3D_TET
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\B-Field [Ms]
+files=s:70282f68.rex
+
+type=s:HENERGY3D_TET
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\Mag. Energy Dens. [Ms]
+files=s:9521a0f9.rex
 

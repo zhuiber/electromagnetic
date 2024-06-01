@@ -1,13 +1,13 @@
-29/May/2024 16:57:01  Magnetostatic Solver
+01/Jun/2024 14:51:00  Magnetostatic Solver
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:01  Units settings: 
+01/Jun/2024 14:51:00  Units settings: 
                       
                         Dimensions: mm
                         Frequency:  Hz
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:01  Boundary conditions: 
+01/Jun/2024 14:51:00  Boundary conditions: 
                       
                         YZsymmetry: none
                         XZsymmetry: none
@@ -23,7 +23,7 @@
                         Zmax: electric
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:02  Solver started at: 04:57 PM Wednesday, 29. May 2024 (中国标准时间)
+01/Jun/2024 14:51:02  Solver started at: 02:51 PM Saturday, 01. June 2024 (中国标准时间)
                       
                         Module:  Magnetostatic Solver (Win 64)
                         Version: 2021.1 Release from 2020-11-10 (change 826605)
@@ -32,50 +32,31 @@
                            Computer name: ADMIN
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:02  Solver order = 2
+01/Jun/2024 14:51:02  Solver order = 2
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:02  Using mesh with curved elements order: 2
+01/Jun/2024 14:51:02  Using mesh with curved elements order: 2
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:02  Adaptive Computation
+01/Jun/2024 14:51:02  Calculating current distribution function.
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:02  Pass 1: 
-                      
-                      ------------------------------------------------------------------------------
-29/May/2024 16:57:02  Calculating current distribution function.
-                      
-                      ------------------------------------------------------------------------------
-29/May/2024 16:57:03  Linear solver is running
+01/Jun/2024 14:51:02  Linear solver is running
                       Desired linear accuracy = 1.0e-06, max Iter = 1200
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:03  Pass 2: 
+01/Jun/2024 14:51:03  Solver Size Statistics:
+                      
+                        Number of mesh cells:         4122 
+                        Number of unknowns:           19912
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:03  Marked 382 of 4122 for refinement.29/May/2024 16:57:04  Refinement successful
-29/May/2024 16:57:04  Calculating current distribution function.
+01/Jun/2024 14:51:03  Solver Timing Statistics: (last run)
                       
-                      ------------------------------------------------------------------------------
-29/May/2024 16:57:04  Linear solver is running
-                      Desired linear accuracy = 1.0e-06, max Iter = 1200
-                      
-                      
-                      ------------------------------------------------------------------------------
-29/May/2024 16:57:05  Solver Size Statistics:
-                      
-                        Number of mesh cells:         6016 
-                        Number of unknowns:           30132
-                      
-                      ------------------------------------------------------------------------------
-29/May/2024 16:57:06  Solver Timing Statistics: (last run)
-                      
-                        Mesh generation:                  0d :  0h :  0m :  1s
-                        Initialization and data import:   0d :  0h :  0m :  0s
+                        Mesh generation:                  0d :  0h :  0m :  2s
                         Assembling process:               0d :  0h :  0m :  0s
                         Linear solver:                    0d :  0h :  0m :  0s
                                                        --------------------------
@@ -86,31 +67,27 @@
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:06  Total simulation time (all mesh adaptation runs) 0d :  0h :  0m :  2s
+01/Jun/2024 14:51:03  Linear Solver Results: (last run)
                       
-                      
-                      ------------------------------------------------------------------------------
-29/May/2024 16:57:06  Linear Solver Results: (last run)
-                      
-                        Accuracy:                     9.320817e-07
+                        Accuracy:                     4.241620e-13
                         Desired accuracy:             1.000000e-06
-                        Number of iterations:         28
+                        Number of iterations:         1
                         Maximum number of iterations: 1200
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:06  Memory statistics:
+01/Jun/2024 14:51:03  Memory statistics:
                       
                         ----------------------------------------------------------------------------
                                             Peak memory used (kB)         Free physical memory (kB) 
                                                                           At begin     Minimum      
                         ----------------------------------------------------------------------------
-                        Solver start        12860                         2032512      2032368      
-                        Solver run total    67436                         2031348      2013948      
+                        Solver start        12980                         947444       947324       
+                        Solver run total    79324                         944796       944796       
                         ----------------------------------------------------------------------------
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 16:57:07  Creating parametric 1D results for Run ID 1
+01/Jun/2024 14:51:05  Creating parametric 1D results for Run ID 2
                       
                       ------------------------------------------------------------------------------

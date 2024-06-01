@@ -10,7 +10,7 @@ reftype bisection
 
 markedelementsfile keep
 
-markedelementsfile evasive "C:\Windows\Temp\CSTDE1\Temp\DE\Untitled_0\Result\refedges.tet"
+markedelementsfile evasive "C:\Users\ADMIN\Desktop\electromagnetic\exp2\cst\test2\Result\refedges.tet"
 
 refine elements
 17

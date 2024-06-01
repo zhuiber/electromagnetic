@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:59
+size=i:34
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -97,6 +97,14 @@ lifetime=s:rebuild
 result=s:1
 files=s:jstatic.slv
 
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+files=s:MCalcAccess.log
+
 type=s:FOLDER
 problemclass=s::8:1000
 visibility=s:visible
@@ -113,72 +121,6 @@ lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\AutomaticRunInformation
 files=s:AutomaticRunInformation
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Meshcells
-files=s:Tet-Adaptation-Meshcells.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Solvertime
-files=s:Tet-Adaptation-Solvertime.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Passtime
-files=s:Tet-Adaptation-Passtime.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Error
-files=s:Tet-Adaptation-Error.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Degrees of Freedom
-files=s:Tet-Adaptation-DOF.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-DCMerge=i:1
-treepath=s:1D Results\Adaptive Meshing\Energy
-files=s:Tet-Adaptation-Energy.sig
 
 type=s:XYSIGNAL2
 subtype=s:user
@@ -340,213 +282,6 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Ms Solver\Flux Linkages\Folder1\currentport4
-files=s:MsSolver_FluxLinkages_Folder1_currentport4.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:hidden
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\AutomaticRunInformation
-files=s:AutomaticRunInformation
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Adaptive Meshing\Meshcells
-files=s:Tet-Adaptation-Meshcells.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Adaptive Meshing\Solvertime
-files=s:Tet-Adaptation-Solvertime.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Adaptive Meshing\Passtime
-files=s:Tet-Adaptation-Passtime.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Adaptive Meshing\Error
-files=s:Tet-Adaptation-Error.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Adaptive Meshing\Degrees of Freedom
-files=s:Tet-Adaptation-DOF.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Adaptive Meshing\Energy
-files=s:Tet-Adaptation-Energy.sig
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Convergence\Solver\Rel. Residual
-files=s:Residual.sig
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Energy\background
-files=s:MsSolver_Energy_background.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Co-Energy\background
-files=s:MsSolver_Co-Energy_background.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Energy\component1\solid2
-files=s:MsSolver_Energy_component1_solid2.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Co-Energy\component1\solid2
-files=s:MsSolver_Co-Energy_component1_solid2.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Energy\component1\solid3
-files=s:MsSolver_Energy_component1_solid3.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Co-Energy\component1\solid3
-files=s:MsSolver_Co-Energy_component1_solid3.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Energy\Total
-files=s:MsSolver_Energy_Total.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Co-Energy\Total
-files=s:MsSolver_Co-Energy_Total.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Flux Linkages\Folder1\currentport1
-files=s:MsSolver_FluxLinkages_Folder1_currentport1.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Flux Linkages\Folder1\currentport2
-files=s:MsSolver_FluxLinkages_Folder1_currentport2.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Ms Solver\Flux Linkages\Folder1\currentport3
-files=s:MsSolver_FluxLinkages_Folder1_currentport3.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
 treepath=s:1D Results\Ms Solver\Flux Linkages\Folder1\currentport4
 files=s:MsSolver_FluxLinkages_Folder1_currentport4.0d
 

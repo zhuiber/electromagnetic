@@ -21,7 +21,6 @@ With Circle
      .Create
 End With
 
-
 '@ define units
 
 '[VERSION]2021.1|30.0.1|20201110[/VERSION]
@@ -223,6 +222,149 @@ With MStaticSolver
      .MeshAdaption "False"
      .PrecomputeStationaryCurrentSource "False"
      .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+'@ change current path: path1
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With CurrentPath
+     .Reset
+     .Name "path1"
+     .Type "CurvePath"
+     .Current "1"
+     .Phase "0.0"
+     .Change
+End With
+
+'@ define background
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With Background 
+     .ResetBackground 
+     .XminSpace "10" 
+     .XmaxSpace "10" 
+     .YminSpace "10" 
+     .YmaxSpace "10" 
+     .ZminSpace "10" 
+     .ZmaxSpace "10" 
+     .ApplyInAllDirections "True" 
+End With 
+
+With Material 
+     .Reset 
+     .Rho "1.204"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.026"
+     .SpecificHeat "1005", "J/K/kg"
+     .DynamicViscosity "1.84e-5"
+     .Emissivity "0.0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .MechanicsType "Unused"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "Hz"
+     .MaterialUnit "Geometry", "m"
+     .MaterialUnit "Time", "s"
+     .MaterialUnit "Temperature", "Kelvin"
+     .Epsilon "1.00059"
+     .Mu "1.0"
+     .Sigma "0.0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstTanD"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstTanD"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0.6", "0.6", "0.6" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeBackgroundMaterial
+End With
+
+'@ define m-static solver parameters
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With MStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .ApparentInductanceMatrix "False"
+     .IncrementalInductanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .PrecomputeStationaryCurrentSource "False"
+     .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+'@ set tetrahedral mesh type
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Mesh.MeshType "Tetrahedral"
+
+'@ define m-static solver parameters
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With MStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .ApparentInductanceMatrix "False"
+     .IncrementalInductanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .PrecomputeStationaryCurrentSource "False"
+     .TetAdaption "False"
      .UseMaxNumberOfThreads "True"
      .MaxNumberOfThreads "1024"
      .MaximumNumberOfCPUDevices "2"

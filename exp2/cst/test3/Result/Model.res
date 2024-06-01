@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:65
+size=i:66
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -104,6 +104,14 @@ creation=s:internal
 lifetime=s:rebuild
 result=s:1
 files=s:jstatic.slv
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+files=s:MCalcAccess.log
 
 type=s:FOLDER
 problemclass=s::8:1000
@@ -369,6 +377,32 @@ result=s:1
 treepath=s:1D Results\Ms Solver\Flux Linkages\Folder1\currentport4
 files=s:MsSolver_FluxLinkages_Folder1_currentport4.0d
 
+type=s:TABLE
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+treepath=s:Tables\1D Results\B-Field (Ms)_Abs (X)
+files=s:B-Field (Ms)_Abs (X).rt1
+files=s:B-Field (Ms)_Abs (X).rd1
+title=s:B-Field (Ms)_Abs (X)
+xlabel=s:X / mm
+
+type=s:TABLE
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+treepath=s:Tables\1D Results\H-Field (Ms)_Abs (X)
+files=s:H-Field (Ms)_Abs (X).rt1
+files=s:H-Field (Ms)_Abs (X).rd1
+title=s:H-Field (Ms)_Abs (X)
+xlabel=s:X / mm
+
 type=s:RESULT_0D
 problemclass=s::8:1000
 visibility=s:hidden
@@ -595,30 +629,4 @@ result=s:1
 parametric=s:P
 treepath=s:1D Results\Ms Solver\Flux Linkages\Folder1\currentport4
 files=s:MsSolver_FluxLinkages_Folder1_currentport4.0d
-
-type=s:TABLE
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-treepath=s:Tables\1D Results\B-Field (Ms)_Abs (X)
-files=s:B-Field (Ms)_Abs (X).rt1
-files=s:B-Field (Ms)_Abs (X).rd1
-title=s:B-Field (Ms)_Abs (X)
-xlabel=s:X / m
-
-type=s:TABLE
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-treepath=s:Tables\1D Results\H-Field (Ms)_Abs (X)
-files=s:H-Field (Ms)_Abs (X).rt1
-files=s:H-Field (Ms)_Abs (X).rd1
-title=s:H-Field (Ms)_Abs (X)
-xlabel=s:X / m
 

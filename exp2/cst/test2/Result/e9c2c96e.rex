@@ -22,13 +22,13 @@
     </Frame>
   </ResultGroups>
   <Extrema>
-    <Min comp="X" value="-1166.0898829439498" position="-20.0225372 -11.1134148 0"/>
-    <Max comp="X" value="1230.1744688549356" position="-21.8497887 -6.85541534 0"/>
-    <Min comp="Y" value="-1067.9976515368169" position="-10.0850258 -20.5597248 0"/>
-    <Max comp="Y" value="1423.3746409554185" position="-6.85541534 -21.8497887 0"/>
-    <Min comp="Z" value="-2077.8688345555333" position="-6.85541534 -21.8497887 0"/>
-    <Max comp="Z" value="1094.095758094395" position="-18.1087646 -14.0172272 0"/>
-    <Min comp="Abs" value="0.0032260848302019594" position="32.9000015 32.9000015 10"/>
-    <Max comp="Abs" value="2146.343284203831" position="-5.73994303 -22.1689663 0"/>
+    <Min comp="X" value="-300.28539692989449" position="-20.0225372 -11.1134148 0"/>
+    <Max comp="X" value="300.07666696263107" position="-21.8497887 -6.85541534 0"/>
+    <Min comp="Y" value="-234.50645034525317" position="3.46769619 -22.6359253 0"/>
+    <Max comp="Y" value="305.64047466070542" position="-10.0850258 -20.5597248 0"/>
+    <Min comp="Z" value="-467.22358803938118" position="-10.0850258 -20.5597248 0"/>
+    <Max comp="Z" value="246.23070873619483" position="-17.3755608 -14.9164295 0"/>
+    <Min comp="Abs" value="0.28718453435555741" position="32.9000015 -32.9000015 10"/>
+    <Max comp="Abs" value="470.87390714224028" position="-10.0850258 -20.5597248 0"/>
   </Extrema>
 </MetaResultFile>

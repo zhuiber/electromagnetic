@@ -331,3 +331,31 @@ UseDistributedComputingMemorySetting "False"
 MinDistributedComputingMemoryLimit "0"
 UseDistributedComputingSharedDirectory "False"
 
+'@ set tetrahedral mesh type
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+Mesh.MeshType "Tetrahedral"
+
+'@ define m-static solver parameters
+
+'[VERSION]2021.1|30.0.1|20201110[/VERSION]
+With MStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .ApparentInductanceMatrix "False"
+     .IncrementalInductanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .PrecomputeStationaryCurrentSource "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+

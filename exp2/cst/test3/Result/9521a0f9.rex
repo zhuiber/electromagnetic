@@ -23,6 +23,6 @@
   </ResultGroups>
   <Extrema>
     <Min comp="X" value="0" position="-11.5 -11.5 10"/>
-    <Max comp="X" value="1.0080207409450478e-06" position="-0.219974548 -0.449011356 7.51040077"/>
+    <Max comp="X" value="1.0080207409450623" position="-0.219974548 -0.449011356 7.51040077"/>
   </Extrema>
 </MetaResultFile>

@@ -22,7 +22,7 @@
     </Frame>
   </ResultGroups>
   <Extrema>
-    <Min comp="X" value="0" position="11.5 11 -5.12472916"/>
-    <Max comp="X" value="7.982746305773897e-08" position="-0.37791574 -0.992519736 5.01569462"/>
+    <Min comp="X" value="0" position="-11.5 -11 -0.404705375"/>
+    <Max comp="X" value="9.3882118379898483e-08" position="-0.37791574 -0.992519736 5.01569462"/>
   </Extrema>
 </MetaResultFile>

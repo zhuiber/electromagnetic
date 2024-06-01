@@ -1,13 +1,13 @@
-29/May/2024 17:16:37  Magnetostatic Solver
+01/Jun/2024 13:56:23  Magnetostatic Solver
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:37  Units settings: 
+01/Jun/2024 13:56:23  Units settings: 
                       
-                        Dimensions: m
+                        Dimensions: mm
                         Frequency:  Hz
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:37  Boundary conditions: 
+01/Jun/2024 13:56:23  Boundary conditions: 
                       
                         YZsymmetry: none
                         XZsymmetry: none
@@ -23,7 +23,7 @@
                         Zmax: electric
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:39  Solver started at: 05:16 PM Wednesday, 29. May 2024 (中国标准时间)
+01/Jun/2024 13:56:25  Solver started at: 01:56 PM Saturday, 01. June 2024 (中国标准时间)
                       
                         Module:  Magnetostatic Solver (Win 64)
                         Version: 2021.1 Release from 2020-11-10 (change 826605)
@@ -32,65 +32,65 @@
                            Computer name: ADMIN
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:39  Solver order = 2
+01/Jun/2024 13:56:25  Solver order = 2
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:39  Using mesh with curved elements order: 2
+01/Jun/2024 13:56:25  Using mesh with curved elements order: 2
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:39  Adaptive Computation
+01/Jun/2024 13:56:25  Adaptive Computation
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:39  Pass 1: 
+01/Jun/2024 13:56:25  Pass 1: 
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:39  Calculating current distribution function.
+01/Jun/2024 13:56:25  Calculating current distribution function.
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:40  Linear solver is running
+01/Jun/2024 13:56:25  Linear solver is running
                       Desired linear accuracy = 1.0e-06, max Iter = 1200
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:41  Pass 2: 
+01/Jun/2024 13:56:27  Pass 2: 
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:41  Marked 757 of 7687 for refinement.29/May/2024 17:16:43  Refinement successful
-29/May/2024 17:16:43  Calculating current distribution function.
+01/Jun/2024 13:56:27  Marked 757 of 7687 for refinement.01/Jun/2024 13:56:28  Refinement successful
+01/Jun/2024 13:56:29  Calculating current distribution function.
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:44  Linear solver is running
+01/Jun/2024 13:56:30  Linear solver is running
                       Desired linear accuracy = 1.0e-06, max Iter = 1200
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:47  Solver Size Statistics:
+01/Jun/2024 13:56:33  Solver Size Statistics:
                       
                         Number of mesh cells:         16670 
                         Number of unknowns:           85094
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:49  Solver Timing Statistics: (last run)
+01/Jun/2024 13:56:34  Solver Timing Statistics: (last run)
                       
-                        Mesh generation:                  0d :  0h :  0m :  2s
+                        Mesh generation:                  0d :  0h :  0m :  1s
                         Initialization and data import:   0d :  0h :  0m :  0s
                         Assembling process:               0d :  0h :  0m :  2s
                         Linear solver:                    0d :  0h :  0m :  1s
                                                        --------------------------
-                        Total time:                       0d :  0h :  0m :  6s
+                        Total time:                       0d :  0h :  0m :  5s
                       
                         Number of threads used:           4 
                       
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:49  Total simulation time (all mesh adaptation runs) 0d :  0h :  0m :  8s
+01/Jun/2024 13:56:34  Total simulation time (all mesh adaptation runs) 0d :  0h :  0m :  7s
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:49  Linear Solver Results: (last run)
+01/Jun/2024 13:56:34  Linear Solver Results: (last run)
                       
                         Accuracy:                     7.141347e-07
                         Desired accuracy:             1.000000e-06
@@ -99,18 +99,18 @@
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:49  Memory statistics:
+01/Jun/2024 13:56:34  Memory statistics:
                       
                         ----------------------------------------------------------------------------
                                             Peak memory used (kB)         Free physical memory (kB) 
                                                                           At begin     Minimum      
                         ----------------------------------------------------------------------------
-                        Solver start        12832                         1824908      1824788      
-                        Solver run total    140488                        1823840      1482644      
+                        Solver start        12864                         3014200      3014200      
+                        Solver run total    139720                        3013400      2885096      
                         ----------------------------------------------------------------------------
                       
                       
                       ------------------------------------------------------------------------------
-29/May/2024 17:16:49  Creating parametric 1D results for Run ID 1
+01/Jun/2024 13:56:36  Creating parametric 1D results for Run ID 1
                       
                       ------------------------------------------------------------------------------

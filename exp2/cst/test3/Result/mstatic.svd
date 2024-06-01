@@ -9,7 +9,7 @@
   <Mesh>
     <BBox>-11.5; 11.5; -11.5; 11.5; -10; 10</BBox>
     <File>3d.slim</File>
-    <GeomScale>1</GeomScale>
+    <GeomScale>0.001</GeomScale>
     <Type>Tet</Type>
   </Mesh>
 </SolutionVectorDescription>

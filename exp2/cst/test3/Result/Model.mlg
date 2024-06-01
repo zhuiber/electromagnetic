@@ -9,7 +9,7 @@ Pass: 1
                Linear solver:       0h :  0m :  0s
                Error estimation:    0h :  0m :  0s
 
-      Energy:                      1.0382e-05 J
+      Energy:                      1.0382e-08 J
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -24,11 +24,11 @@ Pass: 2
                Error estimation:    0h :  0m :  0s
 
       Relative estimated error:    0.00033357
-      Energy:                      1.03855e-05 J
+      Energy:                      1.03855e-08 J
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
-Total adaptive computation time:  0h :  0m :  8s
+Total adaptive computation time:  0h :  0m :  7s
 
 Desired accuracy limit reached, mesh adaptation stopped.
 ----------------------------------------------------------------------

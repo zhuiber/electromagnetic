@@ -1,5 +1,5 @@
 2019_10_21
-[GSCALE: 1]
+[GSCALE: 0.001]
 [PCB_BODIES: False]
 [PCB_IMPORT: False]
 [PCB_IMPORT_NEW: False]
@@ -7,7 +7,7 @@
 [BBOX:-11.5 11.5 -11.5 11.5 -10 10]
 [BBOX_STRUCTURE:-1.5 1.5 -1.5 1.5 -10 10]
 [UNITS]
-     .Geometry "m" 
+     .Geometry "mm" 
      .Frequency "Hz" 
      .Time "s" 
      .TemperatureUnit "Kelvin" 
