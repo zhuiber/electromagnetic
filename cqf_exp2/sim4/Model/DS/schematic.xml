@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchematicTopology Version="2.5" Seed="1" Grid="25">
+    <Block Id="1" ForeignId="147093030" Class="EMSSCHEM" ImageIndex="1">
+        <Size Height="375" Width="300"/>
+        <Pins Distribution="TwoSidesDownward">
+            <Pin Index="0" Port="0" BlockPosition="Left">
+                <Label>cport:Folder1:currentport1<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="1" Port="1" BlockPosition="Left">
+                <Label>cport:Folder1:currentport2<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="2" Port="2" BlockPosition="Left">
+                <Label>cport:Folder1:currentport3<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="3" Port="3" BlockPosition="Left">
+                <Label>cport:Folder1:currentport4<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="0" Port="4" BlockPosition="Right">
+                <Label>cport:Folder1:currentport1'<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Left Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="1" Port="5" BlockPosition="Right">
+                <Label>cport:Folder1:currentport2'<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Left Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="2" Port="6" BlockPosition="Right">
+                <Label>cport:Folder1:currentport3'<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Left Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="3" Port="7" BlockPosition="Right">
+                <Label>cport:Folder1:currentport4'<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Left Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Ports>
+                <Port Name="cport:Folder1:currentport1" Label="" Differential="4"/>
+                <Port Name="cport:Folder1:currentport2" Label="" Differential="5"/>
+                <Port Name="cport:Folder1:currentport3" Label="" Differential="6"/>
+                <Port Name="cport:Folder1:currentport4" Label="" Differential="7"/>
+                <Port Name="cport:Folder1:currentport1'" Label=""/>
+                <Port Name="cport:Folder1:currentport2'" Label=""/>
+                <Port Name="cport:Folder1:currentport3'" Label=""/>
+                <Port Name="cport:Folder1:currentport4'" Label=""/>
+            </Ports>
+        </Pins>
+        <Image FileName="../3D/Model.dib" Scale="AutoFit"/>
+        <Pos X="100" Y="-12.5"/>
+        <ToolTip>CST EM STUDIO schematic block EMSSCHEM1</ToolTip>
+    </Block>
+</SchematicTopology>

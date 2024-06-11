@@ -1,0 +1,116 @@
+10/Jun/2024 18:49:43  Magnetostatic Solver
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:43  Units settings: 
+                      
+                        Dimensions: mm
+                        Frequency:  Hz
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:43  Boundary conditions: 
+                      
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+                      
+                        Xmin: electric
+                        Xmax: electric
+                      
+                        Ymin: electric
+                        Ymax: electric
+                      
+                        Zmin: electric
+                        Zmax: electric
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:47  Solver started at: 06:49 PM Monday, 10. June 2024 (中国标准时间)
+                      
+                        Module:  Magnetostatic Solver (Win 64)
+                        Version: 2022.4 Release from 2022-04-26 (change 967892)
+                      
+                        Hardware:
+                           Computer name: DESKTOP-QFAT908
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:47  Solver order = 2
+                      
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:47  Using mesh with curved elements order: 2
+                      
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:47  Adaptive Computation
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:47  Pass 1: 
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:47  Calculating current distribution function.
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:47  Linear solver is running
+                      Desired linear accuracy = 1.0e-04, max Iter = 800
+                      
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:48  Pass 2: 
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:48  Marked 444 of 4685 for refinement.10/Jun/2024 18:49:49  Refinement successful
+10/Jun/2024 18:49:49  Calculating current distribution function.
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:50  Linear solver is running
+                      Desired linear accuracy = 1.0e-04, max Iter = 800
+                      
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:51  Solver Size Statistics:
+                      
+                        Number of mesh cells:         9174 
+                        Number of unknowns:           46207
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:52  Solver Timing Statistics: (last run)
+                      
+                        Mesh generation:                  0d :  0h :  0m :  3s
+                        Initialization and data import:   0d :  0h :  0m :  0s
+                        Assembling process:               0d :  0h :  0m :  1s
+                        Linear solver:                    0d :  0h :  0m :  0s
+                                                       --------------------------
+                        Total time:                       0d :  0h :  0m :  5s
+                      
+                        Number of threads used:           4 
+                      
+                      
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:52  Total simulation time (all mesh adaptation runs) 0d :  0h :  0m :  4s
+                      
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:52  Linear Solver Results: (last run)
+                      
+                        Accuracy:                     7.610884e-05
+                        Desired accuracy:             1.000000e-04
+                        Number of iterations:         22
+                        Maximum number of iterations: 800
+                      
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:52  Memory statistics:
+                      
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        12812                         4048336      4048180      
+                        Solver run total    87900                         4063224      4012344      
+                        ----------------------------------------------------------------------------
+                      
+                      
+                      ------------------------------------------------------------------------------
+10/Jun/2024 18:49:53  Creating parametric 1D results for Run ID 1
+                      
+                      ------------------------------------------------------------------------------

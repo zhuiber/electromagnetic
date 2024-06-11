@@ -1,0 +1,30 @@
+
+              Logfile of Field Evaluation
+              ===========================
+
+Calculation window:
+===================
+
+ Coordinate System       : global (xyz)   cartesian
+ Dimension               : 1D
+ Direction (tangential)  : Y
+ Stepsize                : 1.21204
+
+                 low        high    stepsize
+         ----------- ----------- -----------
+       X           0           0           1
+       Y        -0.4         0.4         0.8
+       Z           0           0           1
+
+Evaluated field, component and result value:
+============================================
+
+ Evaluated field         : B-Field [Ms]
+ Field component         : Abs
+ Complex                 : Real Part
+ Result Value            : 1D Plot of Field Values
+
+
+Result Data:
+============
+

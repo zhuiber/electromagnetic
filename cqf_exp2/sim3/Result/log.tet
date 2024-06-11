@@ -1,0 +1,27 @@
+[15:13:03] -------- TetMesher Log --------
+[15:13:03] Build Number: 20220426; ID: 2022.4 Release from 2022-04-26 (change 967892); Date: 2022-04-26; ACIS version: 31.0.1, SPAresabs & SPAresnor: 1e-06, 1e-10; Problem class: Low Frequency
+[15:13:03] Adaptive mesh refinement (pos.snap.)
+[15:13:03] - Refining mesh
+[15:13:03]  Mesh bisection
+
+[15:13:04]  bad element 12658
+
+
+[15:13:04]  repairing
+
+[15:13:04]  3 trials
+
+[15:13:05]  Time for Repair: 1.381
+bad elements after repair: 
+
+
+[15:13:05]  Bisection done
+
+[15:13:05]  Curve elements, order = 2
+
+[15:13:06] - OK
+[15:13:06] 
+#### Feedback Report Begins ####
+#### Feedback Report Ends ####
+
+[15:13:06] Done

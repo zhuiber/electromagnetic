@@ -1,0 +1,44 @@
+{
+    "anchorpoints": [],
+    "portpins": [
+        {
+            "name": "cport:Folder1:currentport1",
+            "position": [
+                -7.406526481786812e-17,
+                0.0,
+                10.0
+            ],
+            "rotation": [
+                0.0,
+                -1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                1.0,
+                0.0,
+                -0.0
+            ]
+        },
+        {
+            "name": "cport:Folder1:currentport2",
+            "position": [
+                -7.406526481786812e-17,
+                0.0,
+                -10.0
+            ],
+            "rotation": [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.0,
+                1.0,
+                -0.0,
+                0.0
+            ]
+        }
+    ],
+    "version": 6
+}

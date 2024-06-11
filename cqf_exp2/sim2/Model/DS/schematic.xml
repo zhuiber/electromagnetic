@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchematicTopology Version="2.5" Seed="2" Grid="25">
+    <Block Id="2" ForeignId="170715804" Class="EMSSCHEM" ImageIndex="1">
+        <Size Height="150" Width="150"/>
+        <Pins Distribution="Custom">
+            <Pin Index="0" Port="0" BlockPosition="Left">
+                <Label>current:path1</Label>
+            </Pin>
+            <Pin Index="0" Port="1" BlockPosition="Right">
+                <Label>current:path1'</Label>
+            </Pin>
+            <Ports>
+                <Port Name="current:path1" Label="" Differential="1"/>
+                <Port Name="current:path1'" Label=""/>
+            </Ports>
+        </Pins>
+        <Image FileName="../../3D/Model.dib" Scale="AutoFit"/>
+        <Pos X="100" Y="350"/>
+        <ToolTip>CST EM STUDIO schematic block EMSSCHEM1</ToolTip>
+    </Block>
+</SchematicTopology>

@@ -1,0 +1,269 @@
+'# EMS Version: Version 2022.4 - Apr 26 2022 - ACIS 31.0.1 -
+
+'# length = mm
+'# frequency = Hz
+'# time = s
+'# frequency range: fmin = 0.0 fmax = 0.0
+'# created = '[VERSION]2022.4|31.0.1|20220426[/VERSION]
+
+
+'@ new component: component1
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+Component.New "component1"
+
+'@ define cylinder: component1:solid1
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "Air" 
+     .OuterRadius "1.5" 
+     .InnerRadius "1" 
+     .Axis "z" 
+     .Zrange "0", "0" 
+     .Xcenter "0" 
+     .Ycenter "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ delete shape: component1:solid1
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+Solid.Delete "component1:solid1"
+
+'@ define cylinder: component1:solid1
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "Air" 
+     .OuterRadius "1.5" 
+     .InnerRadius "1" 
+     .Axis "z" 
+     .Zrange "-10", "10" 
+     .Xcenter "0" 
+     .Ycenter "0" 
+     .Segments "0" 
+     .Create 
+End With
+
+'@ define units
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With Units 
+     .Geometry "mm" 
+     .Frequency "Hz" 
+     .Time "s" 
+     .TemperatureUnit "Kelvin" 
+     .Voltage "V" 
+     .Current "A" 
+     .Resistance "Ohm" 
+     .Conductance "Siemens" 
+     .Capacitance "PikoF" 
+     .Inductance "NanoH" 
+     .SetResultUnit "frequency", "frequency", "" 
+End With
+
+'@ change solver type
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+ChangeSolverType "LF MStatic"
+
+'@ define current port: Folder1:currentport1
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With CurrentPort
+     .Reset
+     .Name "currentport1"
+     .Folder "Folder1"
+     .Value "3.2"
+     .Phase "0"
+     .ValueType "Current"
+     .CurrentDirection "FaceNormal"
+     .Face "component1:solid1", "3"
+     .Create
+End With
+
+'@ define current port: Folder1:currentport2
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With CurrentPort
+     .Reset
+     .Name "currentport2"
+     .Folder "Folder1"
+     .Value "3.2"
+     .Phase "0"
+     .ValueType "Current"
+     .CurrentDirection "FaceInverted"
+     .Face "component1:solid1", "1"
+     .Create
+End With
+
+'@ define background
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With Background 
+     .ResetBackground 
+     .XminSpace "10" 
+     .XmaxSpace "10" 
+     .YminSpace "10" 
+     .YmaxSpace "10" 
+     .ZminSpace "0" 
+     .ZmaxSpace "0" 
+     .ApplyInAllDirections "False" 
+End With 
+
+With Material 
+     .Reset 
+     .Rho "1.204"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.026"
+     .SpecificHeat "1005", "J/K/kg"
+     .DynamicViscosity "1.84e-5"
+     .Emissivity "0.0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .MechanicsType "Unused"
+     .IntrinsicCarrierDensity "0"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "Hz"
+     .MaterialUnit "Geometry", "m"
+     .MaterialUnit "Time", "s"
+     .MaterialUnit "Temperature", "Kelvin"
+     .Epsilon "1.00059"
+     .Mu "1.0"
+     .Sigma "0.0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstSigma"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstSigma"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0.6", "0.6", "0.6" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeBackgroundMaterial
+End With
+
+'@ define boundaries
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With Boundary
+     .Xmin "electric"
+     .Xmax "electric"
+     .Ymin "electric"
+     .Ymax "electric"
+     .Zmin "electric"
+     .Zmax "electric"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "True"
+     .XminPotential ""
+     .XminPotentialType "None"
+     .XmaxPotential ""
+     .XmaxPotentialType "None"
+     .YminPotential ""
+     .YminPotentialType "None"
+     .YmaxPotential ""
+     .YmaxPotentialType "None"
+     .ZminPotential ""
+     .ZminPotentialType "None"
+     .ZmaxPotential ""
+     .ZmaxPotentialType "None"
+End With
+
+'@ define m-static solver parameters
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With MStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .ApparentInductanceMatrix "False"
+     .IncrementalInductanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .PrecomputeStationaryCurrentSource "False"
+     .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ change material: component1:solid1 to: Copper (annealed)
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+Solid.ChangeMaterial "component1:solid1", "Copper (annealed)"
+
+'@ define m-static solver parameters
+
+'[VERSION]2022.4|31.0.1|20220426[/VERSION]
+With MStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .ApparentInductanceMatrix "False"
+     .IncrementalInductanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .PrecomputeStationaryCurrentSource "False"
+     .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
