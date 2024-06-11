@@ -1,12 +1,44 @@
 # electromagnetic
+<!-- 初始化仓库 -->
+git init
 
-!git --version
+<!-- 克隆仓库 -->
+git clone https://github.com/username/repository.git
 
-!git add .
+<!-- 添加文件到暂存区 -->
+git add example.txt
 
-!git commit -m 'Your commit message'
+<!-- 提交更改 -->
+git commit -m "Add example.txt"
 
-!git push origin main
+<!-- 查看状态 -->
+git status
+
+<!-- 查看提交历史 -->
+git log
+
+<!-- 创建分支 -->
+git branch feature
+
+<!-- 切换分支 -->
+git checkout feature
+
+<!-- 合并分支 -->
+git merge feature
+
+<!-- 推送到远程仓库 -->
+git push origin feature
+
+<!-- 从远程仓库拉取更改 -->
+git pull origin main
+
+<!-- 删除分支 -->
+git branch -d feature
+
+<!-- 重置暂存区和工作区 -->
+git reset HEAD example.txt
+
+
 
 
 生成 SSH 密钥（如果还没有生成）：

@@ -6,8 +6,10 @@ close all;
 % 参数设定
 I = 1; % 电流 (安培)
 mu0 = 4 * pi * 1e-7; % 真空磁导率 (H/m)
-x1 = -0.5e-3; % 第一个圆柱中心位置 (米)
-x2 = 0.5e-3; % 第二个圆柱中心位置 (米)
+d = 1e-3; % 圆柱之间的距离 (米)
+a = 0.5e-3; % 圆柱的半径 (米)
+
+J = I./((pi/3+0.5*(3)^(1/2))*10^(-3));
 
 % 导入仿真数据
 data_B = importdata('test4.txt'); % 假设数据保存在test4.txt文件中
@@ -24,14 +26,14 @@ B_theory = zeros(size(x_theory));
 for i = 1:length(x_theory)
     x = x_theory(i);
     % 计算磁感应强度
-    B_theory(i) = (mu0 * I / (2 * pi)) * (x / (x^2 - (1e-3)^2 / 4));
+    B_theory(i) = (mu0 *J) /2;
 end
 
 % 绘图
 figure;
 hold on;
 plot(x_theory * 1e3, B_theory, 'b-', 'LineWidth', 2); % 理论曲线，单位转换为毫米
-scatter(x_sim_B * 1e3, B_sim, 'ro'); % 仿真散点图，用空心圆圈绘图
+scatter(x_sim_B * 1e3, B_sim, 'ro'); % 仿真散点图，用红色圆圈绘图
 hold off;
 
 % 设置图形标签和标题
